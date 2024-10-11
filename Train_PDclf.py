@@ -13,6 +13,9 @@ from printf import prif
 
 # 모델 학습용 코드입니다.
 
+datapath=''
+
+
 # Seed setting
 def set_seed(num=42):
     torch.manual_seed(num)
@@ -199,8 +202,8 @@ for ep in range(epochs):
         #loss_ep+=loss_total/audio.shape[0]
         
         
-        torch.save(clfmod, f'/tf/nasw/CHECKPOINTS/{modtype}-{fetype}-task{tasknum}-{ep+1}ep.pth')
-        prif( f'/tf/nasw/CHECKPOINTS/{modtype}-{fetype}-task{tasknum}-{ep+1}ep.pth saved.')
+        torch.save(clfmod, f'{datapath}/{modtype}-{fetype}-task{tasknum}-{ep+1}ep.pth')
+        prif( f'{datapath}/{modtype}-{fetype}-task{tasknum}-{ep+1}ep.pth saved.')
         
         acc=0
         acc_pd=0
