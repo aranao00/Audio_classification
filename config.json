@@ -1,0 +1,29 @@
+{
+       "__FEmodelSAMPLE__": "hub_kr, wtv_kr, hub_base, wtv_base",
+       "__CLFmodelSAMPLE__": "self-attention, cross-attention, linear",
+       "FEmodel": "wtv_base",
+       "CLFmodel": "linear",
+       "self-attention_config": {
+              "d_model": 6,
+              "layers": 3,
+              "nhead": 4
+       },
+       "cross-attention_config": {
+              "hdim": 256,
+              "layer_num": 1,
+              "token_number": 8,
+              "nhead": 8
+       },
+       "linear_config": {},
+       "optim": "Adam",
+       "batchsize": 64,
+       "lr": 2e-05,
+       "epochs": 300,
+       "iter_per_epochs": 3,
+       "loss_fn": "BCE",
+       "device": "cuda",
+       "task_number": "002",
+       "seed": 42,
+       "debug": true,
+       "duration": 6
+}
