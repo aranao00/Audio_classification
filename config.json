@@ -25,5 +25,6 @@
        "task_number": "002",
        "seed": 42,
        "debug": true,
-       "duration": 6
+       "duration": 6,
+       "log_path": "./train_log.txt"
 }
